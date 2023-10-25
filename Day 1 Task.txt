@@ -1,0 +1,240 @@
+1.import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        
+        if ((a+b)>(c+d)){
+            System.out.println("Sum of a and b is greater then sum of c and d");
+        }else{
+            System.out.println("Sum of a and b is not greater then sum of c and d");
+        }
+     
+    }
+}
+
+
+Input:
+5
+5
+1
+1
+
+output:
+Sum of a and b is greater then sum of c and d
+
+
+2. import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        
+        if(a%2==0){
+            System.out.println("The given integer is even number");
+        }else{
+            System.out.println("The given integer is odd number");
+        }
+     
+    }
+}
+
+Input : 4
+Output : The given integer is even number
+
+3.import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        char c;
+        for (c='A'; c<='Z'; c++){
+            System.out.print(c +" ");
+        }
+     
+    }
+}
+
+output: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+
+4. import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        int x, y, t;
+        
+       Scanner sc = new Scanner(System.in);  
+       System.out.println("Enter the value of X and Y");  
+       x = sc.nextInt();  
+       y = sc.nextInt();  
+       System.out.println("before swapping numbers: "+x +"  "+ y);  
+       
+       
+       t = x;  
+       x = y;  
+       y = t;  
+       System.out.println("After swapping: "+x +"   " + y);  
+       System.out.println( );  
+    }    
+}  
+
+Input : 96 98 
+
+out put : 
+Enter the value of X and Y
+before swapping numbers: 96  98
+After swapping: 98   96
+
+
+5.import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Prime number or not: ");
+        int num= sc.nextInt();
+        if(isPrime(num)) {
+            System.out.println(num + " is a prime number");
+        }
+        else{
+            System.out.println(num + " is not a prime number");
+        }
+    }
+    static  boolean isPrime(int num1)
+    {
+        if(num1<=1)
+        {
+            return false;
+        }
+       for(int i=2;i<=num1/2;i++)
+       {
+           if((num1%i)==0)
+               return  false;
+       }
+       return true;
+    }
+
+
+}
+
+Input : 14
+output : Prime number or not: 
+14 is not a prime number
+
+
+6. import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        
+        int i;
+        int fact = 1;
+        for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  System.out.println("Factorial of "+number+" is: "+fact);    
+ }  
+}  
+
+
+input : 5
+Output : 120
+
+7. import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        String getstring = sc.nextLine();
+        
+        int length = getstring.length();
+        
+        System.out.println("The length of the string is: " +length);
+        
+        
+        
+    }
+}  
+
+input : Guvi Geek
+Output : The length of the string is: 9
+
+
+
+8.import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        
+        for (int i = 0; i<10; i++){
+            System.out.println("Welcome to Guvi");
+        }
+        
+     
+    }
+}
+
+output:
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+Welcome to Guvi
+
+9.import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        
+        if (age >=75){
+            System.out.println("The person is a senior citizen");
+        }else{
+            System.out.println("The person is not a senior citizen");
+
+        }
+        
+     
+    }
+}
+
+Input: 27
+output: The person is not a senior citizen
+
+
+
+10. import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int num = sc.nextInt();
+        
+    int count = 0;
+
+    while (num != 0) {
+      num /= 10;
+      ++count;
+    }
+
+    System.out.println("Number of digits: " + count);
+  }
+}
+
+Input : 56
+Output : Number of digits: 2
